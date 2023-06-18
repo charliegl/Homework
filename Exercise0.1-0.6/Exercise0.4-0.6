@@ -1,0 +1,31 @@
+Exercise 0.4: ------------------------------------------
+
+User->Browser: Open the webpage
+Browser->User: Display webpage
+User->Browser: Enter note text
+User->Browser: Click submit button
+Browser->Web Server: HTTP POST /notes 
+Web Server->Database: Store new note
+Database-->Web Server: Note stored
+Web Server-->Browser: Created
+Browser->User: Display success message
+
+ 
+Exercise 0.5: --------------------------------------------
+
+
+User->Browser: Open SPA URL
+Browser->Web Server: HTTP GET /spa
+Web Server-->Browser: SPA Files 
+Browser->User: Display SPA
+
+Exercise 0.6: ----------------------------------------------------
+
+User->Browser: Enter note details
+User->Browser: Click submit button
+Browser->Web Server: HTTP POST /notes 
+Web Server->Database: Store new note
+Database-->Web Server: Note stored
+Web Server-->Browser: Success response
+Browser->User: Display success message
+
