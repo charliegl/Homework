@@ -12,17 +12,19 @@ const App = () => {
 
   return (
     <div>
-      <h1>{course}</h1>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+      <Header course={course} />
+
+      <Content >
+      <div>
+      <Part name="Part 1" exercises1={10} />
+      <Part name="Part 2" exercises2={15} />
+      <Part name="Part 3" exercises3={20} />
+      </div>
+      </Content>
+
+      <Total>
+        <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+        </Total>
     </div>
   )
 }
